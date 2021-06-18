@@ -1,0 +1,36 @@
+@import "~primeicons/primeicons.css";
+
+.menu {
+  list-style: none;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  flex-flow: row;
+  color: rgb(255, 217, 0);
+}
+
+.menu a {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: block;
+  color: rgb(201, 157, 35);
+  padding: 16px 10px;
+  border-bottom: 4px solid transparent;
+}
+.menu a:hover,
+.menu a.active {
+  color: white;
+  text-decoration: none;
+}
+
+.el {
+  font-size: 18px;
+  padding-left: 15px;
+  margin-bottom: -2px;
+}
+
+.icon {
+  padding-right: 30px;
+}
