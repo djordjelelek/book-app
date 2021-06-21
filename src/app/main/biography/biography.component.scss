@@ -1,3 +1,33 @@
-.h {
-  color: chartreuse;
+.biography {
+  text-align: center;
+}
+.header {
+  color: rgb(255, 255, 255);
+}
+.picture {
+  width: 150px;
+  box-shadow: 4px 4px 15px #051c2d;
+  border-radius: 6px;
+}
+.inner {
+  background-color: white;
+  color: #051c2d;
+  margin-top: 30px;
+  padding: 20px;
+  padding-left: 20%;
+  padding-right: 20%;
+  position: relative;
+  text-align: justify;
+  height: 100%;
+}
+
+.innerHeader {
+  margin-top: 3px;
+  margin-bottom: 3px;
+  text-align: center;
+  color: #051c2d;
+}
+.innerText {
+  color: #051c2d;
+  margin-bottom: 70px;
 }
