@@ -1,0 +1,22 @@
+.container {
+  text-align: center;
+  padding-left: auto;
+  padding-right: auto;
+  color: white;
+  display: grid;
+  margin: auto;
+}
+.image {
+  width: 640px;
+  height: 350px;
+  //   margin: auto;
+}
+.imageSmall {
+  width: 110px;
+  height: 60px;
+}
+
+.galleria {
+  position: relative;
+  margin: auto;
+}

@@ -1,5 +1,18 @@
-<p-galleria [value]="images">
-  <ng-template pTemplate="item" let-item>
-    <img [src]="item.previewImageSrc" [alt]="item.alt" />
-  </ng-template>
-</p-galleria>
+<div class="container">
+  <h1>Ivo Andric - Иво Андрић (1892 - 1975)</h1>
+  <p-galleria
+    class="galleria"
+    [value]="images"
+    [containerStyle]="{ 'max-width': '640px' }"
+    [numVisible]="4"
+  >
+    <ng-template pTemplate="item" let-item>
+      <img [src]="item.previewImageSrc" [alt]="item.alt" class="image" />
+    </ng-template>
+    <ng-template pTemplate="thumbnail" let-item>
+      <div class="p-grid p-nogutter p-justify-center">
+        <img [src]="item.previewImageSrc" class="imageSmall" />
+      </div>
+    </ng-template>
+  </p-galleria>
+</div>

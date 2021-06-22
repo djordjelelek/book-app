@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ImagesService } from 'src/app/shared/images.service';
 
 @Component({
   selector: 'app-home',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
-  images: any[] = [
-    'https://www.nationalgeographic.rs//files/images/2019/03/mesec_snimljen_aps_671315071.jpg',
-  ];
-  constructor() {}
+  images: Array<Object> = [];
+  constructor(private imagesService: ImagesService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.imagesService.getImages().subscribe((images) => {
+      let copyImages = Object.values(images);
+      copyImages.shift();
+      this.images = [...copyImages];
+    });
+  }
 }
