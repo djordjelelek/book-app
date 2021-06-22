@@ -13,6 +13,7 @@ const appRoutes: Routes = [
   { path: 'books', component: BooksComponent },
   { path: 'books/:id', component: BookItemComponent },
   { path: 'quotes', component: QuotesComponent },
+  { path: '**', component: HomeComponent }, // all others routes
 ];
 
 @NgModule({
