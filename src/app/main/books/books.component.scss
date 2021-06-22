@@ -1,0 +1,42 @@
+// .container {
+//   display: grid;
+//   grid-template-columns: 250px 250px 250px;
+//   width: 60%;
+//   text-align: center;
+//   margin: auto;
+//   // padding-bottom: 100px;
+// }
+// .item {
+//   // background-color: rgba(121, 82, 82, 0.8);
+//   // border: 5px solid rgba(255, 255, 255, 0.89);
+//   padding-bottom: 150px;
+//   background-color: chocolate;
+//   margin: 50px;
+// }
+.container {
+  text-align: center;
+}
+
+.header {
+  color: white;
+}
+
+.books {
+  display: inline-block;
+  text-align: center;
+  margin: auto;
+  padding: 50px;
+  padding-top: 5px;
+}
+.images {
+  min-width: 300px;
+  max-height: 350px;
+  box-shadow: 4px 4px 15px #051c2d;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.title {
+  color: white;
+  background-color: rgb(151, 19, 19);
+  font-size: 30px;
+}

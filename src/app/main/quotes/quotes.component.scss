@@ -47,6 +47,7 @@
 }
 .element {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   padding-top: 4px;
   padding-right: 5px;

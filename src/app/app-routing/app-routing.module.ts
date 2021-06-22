@@ -10,11 +10,8 @@ const appRoutes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'biography', component: BiographyComponent },
-  {
-    path: 'books',
-    component: BooksComponent,
-    children: [{ path: ':id', component: BookItemComponent }],
-  },
+  { path: 'books', component: BooksComponent },
+  { path: 'books/:id', component: BookItemComponent },
   { path: 'quotes', component: QuotesComponent },
 ];
 

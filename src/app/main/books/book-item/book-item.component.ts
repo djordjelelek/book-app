@@ -1,19 +1,17 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Params } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-book-item',
   templateUrl: './book-item.component.html',
-  styles: [],
+  styleUrls: ['./book-item.component.scss'],
 })
 export class BookItemComponent implements OnInit {
-  private id: number = 0;
+  url: String = '';
 
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit(): void {
-    this.route.params.subscribe((params: Params) => {
-      this.id = +params['id'];
-    });
+    this.route.url.subscribe((el) => (this.url = el[1].path));
   }
 }

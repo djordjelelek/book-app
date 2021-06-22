@@ -1,1 +1,9 @@
-<p>books works!</p>
+<div class="container">
+  <h1 class="header">The best books</h1>
+  <div class="books" *ngFor="let book of books; let i = index">
+    <a routerLink="{{ i + 1 }}"
+      ><img [src]="book[1]" [alt]="book[0]" class="images"
+    /></a>
+    <p class="title">{{ book[0] }}</p>
+  </div>
+</div>

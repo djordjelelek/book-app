@@ -1,1 +1,5 @@
-<p>book-item works!</p>
+<div class="container" [ngSwitch]="url">
+  <app-bosnian-chronicle *ngSwitchCase="1"></app-bosnian-chronicle>
+  <app-omer-pasa-latas *ngSwitchCase="2"></app-omer-pasa-latas>
+  <app-the-bridge-on-the-drina *ngSwitchCase="3"></app-the-bridge-on-the-drina>
+</div>
