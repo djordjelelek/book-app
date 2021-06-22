@@ -1,14 +1,58 @@
 .quotes {
+  padding: 0px;
+  width: 40%;
   text-align: center;
-  padding: 20px;
+  margin: auto;
 }
 .button {
-  // background-color: #051c2d;
-  // color: rgb(201, 157, 35);
   background-color: rgb(201, 157, 35);
   color: #051c2d;
   border-color: #051c2d;
 }
 .button:hover {
   background-color: rgb(247, 184, 10);
+}
+.header {
+  color: rgb(255, 255, 255);
+}
+.input {
+  vertical-align: text-top;
+}
+.inputQuotes {
+  margin-bottom: 40px;
+}
+.message {
+  color: white;
+  padding-top: 8px;
+}
+
+:host ::ng-deep {
+  .product-grid-item {
+    border: 1px solid #dee2e6;
+
+    .product-grid-item-top,
+    .product-grid-item-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}
+
+.card {
+  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+.element {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 4px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.x {
+  color: rgb(196, 13, 13);
+  cursor: pointer;
 }

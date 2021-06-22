@@ -1,17 +1,49 @@
 <div class="quotes">
-  <button
-    pButton
-    pRipple
-    type="button"
-    label="Add quote"
-    class="button"
-  ></button>
-
-  <!-- <button
-    pButton
-    pRipple
-    type="button"
-    label="Danger"
-    class="p-button-danger"
-  ></button> -->
+  <h1 class="header">Quotes</h1>
+  <form (ngSubmit)="saveQuote(form)" #form="ngForm">
+    <div class="p-inputgroup inputQuotes">
+      <label for="input"></label>
+      <input
+        type="text"
+        pInputText
+        placeholder="Write quote here"
+        ngModel
+        name="input"
+        required
+      />
+      <button
+        type="submit"
+        pButton
+        pRipple
+        label="Add quote"
+        class="button"
+        [disabled]="!form.valid"
+      ></button>
+    </div>
+  </form>
+  <div class="card" *ngIf="quotes.length !== 0; else message">
+    <p-dataView
+      #dv
+      [value]="quotes"
+      [paginator]="true"
+      [rows]="5"
+      filterBy="name"
+      layout="grid"
+    >
+      <ng-template let-quote pTemplate="gridItem">
+        <div class="p-col-12 p-md-4">
+          <div class="product-grid-item card element">
+            <p>"{{ quote }}"</p>
+            <i
+              class="pi pi-times x"
+              (click)="deleteQuote(quotes.indexOf(quote))"
+            ></i>
+          </div>
+        </div>
+      </ng-template>
+    </p-dataView>
+  </div>
+  <ng-template #message>
+    <h3 class="message">No quote yet!</h3>
+  </ng-template>
 </div>
