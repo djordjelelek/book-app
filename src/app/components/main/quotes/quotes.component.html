@@ -33,7 +33,7 @@
       <ng-template let-quote pTemplate="gridItem">
         <div class="p-col-12 p-md-4">
           <div class="product-grid-item card element">
-            <p>"{{ quote }}"</p>
+            <p>{{ quote | quotes }}</p>
             <i
               class="pi pi-times x"
               (click)="deleteQuote(quotes.indexOf(quote))"

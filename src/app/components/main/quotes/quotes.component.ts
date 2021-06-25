@@ -1,6 +1,6 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { StorageService } from '../../shared/storage.service';
+import { StorageService } from '../../../services/storage.service';
 
 @Component({
   selector: 'app-quotes',

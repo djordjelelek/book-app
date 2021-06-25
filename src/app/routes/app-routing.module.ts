@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { BiographyComponent } from '../main/biography/biography.component';
-import { BooksComponent } from '../main/books/books.component';
-import { HomeComponent } from '../main/home/home.component';
-import { BookItemComponent } from '../main/books/book-item/book-item.component';
-import { QuotesComponent } from '../main/quotes/quotes.component';
+import { BiographyComponent } from '../components/main/biography/biography.component';
+import { BooksComponent } from '../components/main/books/books.component';
+import { HomeComponent } from '../components/main/home/home.component';
+import { BookItemComponent } from '../components/main/books/book-item/book-item.component';
+import { QuotesComponent } from '../components/main/quotes/quotes.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
